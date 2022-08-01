@@ -82,8 +82,14 @@ public class UnitTest1
     }
 
     [Fact]
-    public void Test4()
+    public void Test5()
     {
-        
+        //Arrange
+        string dataOne = "Selam";
+        int dataTwo = 12;
+
+        //Assert
+        Assert.IsType<String>(dataOne); // Girilen değer belirtilen veri türünde ise başarılı. 
+        Assert.IsNotType<int>(dataTwo); // Girilen değer belirtilen veri türünde değil ise başarılı.
     }
 }
